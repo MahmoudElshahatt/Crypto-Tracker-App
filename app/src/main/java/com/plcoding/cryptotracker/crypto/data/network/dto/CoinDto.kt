@@ -14,8 +14,6 @@ data class CoinDto(
     val id: String = "", // bitcoin
     @SerialName("marketCapUsd")
     val marketCapUsd: Double = 0.0, // 119150835874.4699281625807300
-    @SerialName("maxSupply")
-    val maxSupply: String = "", // 21000000.0000000000000000
     @SerialName("name")
     val name: String = "", // Bitcoin
     @SerialName("priceUsd")

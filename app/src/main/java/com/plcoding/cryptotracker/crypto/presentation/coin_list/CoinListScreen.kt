@@ -9,13 +9,24 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.CoinListItem
 
 @Composable
 fun CoinListScreen(
+    coinListViewModel: CoinListViewModel,
+    modifier: Modifier = Modifier
+) {
+    val state by coinListViewModel.state.collectAsStateWithLifecycle()
+    CoinListContent(state, modifier)
+}
+
+@Composable
+fun CoinListContent(
     state: CoinListState,
     modifier: Modifier = Modifier
 ) {
