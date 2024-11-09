@@ -20,11 +20,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.plcoding.cryptotracker.crypto.domain.Coin
+import com.plcoding.cryptotracker.crypto.domain.model.Coin
 import com.plcoding.cryptotracker.crypto.presentation.model.CoinUI
 import com.plcoding.cryptotracker.crypto.presentation.model.toCoinUI
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme

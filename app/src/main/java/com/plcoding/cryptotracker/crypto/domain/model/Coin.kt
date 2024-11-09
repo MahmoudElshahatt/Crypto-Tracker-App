@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker.crypto.domain
+package com.plcoding.cryptotracker.crypto.domain.model
 
 data class Coin(
     val id: String,
