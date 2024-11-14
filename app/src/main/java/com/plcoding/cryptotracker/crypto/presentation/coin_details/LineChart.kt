@@ -93,7 +93,7 @@ fun LineChart(
                     isShowingDataPoints =
                         (newSelectedDataPointIndex + visibleDataPointsIndices.first) in
                                 visibleDataPointsIndices
-                    if(isShowingDataPoints) {
+                    if (isShowingDataPoints) {
                         onSelectedDataPoint(dataPoints[newSelectedDataPointIndex])
                     }
                 }
@@ -112,8 +112,10 @@ fun LineChart(
         }
         val maxXLabelWidth = xLabelTextLayoutResults.maxOfOrNull { it.size.width } ?: 0
         val maxXLabelHeight = xLabelTextLayoutResults.maxOfOrNull { it.size.height } ?: 0
-        val maxXLabelLineCount = xLabelTextLayoutResults.maxOfOrNull { it.lineCount } ?: 1
-        val xLabelLineHeight = maxXLabelHeight / maxXLabelLineCount
+        val maxXLabelLineCount = xLabelTextLayoutResults.maxOfOrNull { it.lineCount } ?: 0
+        val xLabelLineHeight = if (maxXLabelLineCount > 0) {
+            maxXLabelHeight / maxXLabelLineCount
+        } else 0
 
         val viewPortHeightPx = size.height -
                 (maxXLabelHeight + 2 * verticalPaddingPx
