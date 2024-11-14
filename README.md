@@ -1,6 +1,6 @@
 # Crypto Tracker App
 
-I’m excited to share that I’ve just finished The Best Practice Guide to Android Architecture by Philipp Lackner, and it’s been an incredibly rewarding experience!
+A Crypto Tracker App helps users monitor real-time prices and stay updated on cryptocurrency market trends.
 
 ## Here’s what I learned:
 
