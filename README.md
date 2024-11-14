@@ -20,5 +20,5 @@ The Crypto Tracker App I built may seem simple, but it integrates various approa
 
 ## App Preview
 
-[Screen_recording_20241114_074859.webm](https://github.com/user-attachments/assets/9030f424-dd93-4aeb-ac60-abe0ee9c029c)
+[AppPreview.webm](https://github.com/user-attachments/assets/9030f424-dd93-4aeb-ac60-abe0ee9c029c)
 
